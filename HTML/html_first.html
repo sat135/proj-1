@@ -1,0 +1,822 @@
+<!DOCTYPE HTML> <!-- defines document -->
+<html> <!-- start html -->
+<head> <!-- start head -->
+<title>vezhbi</title> <!-- start title end -->
+</head> <!-- end head -->
+    <style>
+        #p01 { color: blue; }
+        #red-text { color: red;}
+        #p02 { border: 1px solid grey; }
+        #code-plav { background: lightblue;}
+        
+    </style>
+<body> <!-- start body -->
+  <h1 align="center">HTML basic tutorials</h1>
+    <h2> HTML document example </h2>
+       <p> a simple HTML contains: </p>
+       <div>
+        <pre>
+         <code>
+          &lt;!DOCTYPE HTML&gt; - defines document
+          &lt;html&gt; - start html
+          &lt;head&gt; - start head
+          &lt;title&gt;title&lt;/title&gt; - start title end
+          &lt;/head&gt;- end head
+          &lt;body&gt; - start body
+          &lt;/body&gt; - end body
+          &lt;/html&gt; - end html
+         </code>
+        </pre>
+       </div>
+    <div>
+    <h2> HTML Basic Examples </h2>
+    <div>
+    <h3>Headings:</h3>
+    <p> &lt;h1&gt; - &lt;h6&gt;</p>
+    <ol>
+        <li><h1>Heading 1</h1></li>
+        <li><h2>Heading 2</h2></li>
+        <li><h3>Heading 3</h3></li>
+        <li><h4>Heading 4</h4></li>
+        <li><h5>Heading 5</h5></li>
+        <li><h6>Heading 6</h6></li>
+    </ol>
+        <ul>
+        <li>Use HTML headings for headings only. Don't use headings to make text BIG or bold.</li>
+        <li>Search engines use your headings to index the structure and content of your web pages.</li>
+        <li>Users skim your pages by its headings. It is important to use headings to show the document structure.</li>
+        <li>h1 headings should be main headings, followed by h2 headings, then the less important h3, and so on.</li>
+        </ul>
+    </div>
+<div>
+<h3>Images</h3>
+    <p>attributes:</p>
+    <ul><li>src - source file;</li>
+        <li>alt - alternative text;</li>
+        <li>width & height - size in pixels;</li></ul>
+    <p>example:</p>
+    <div>
+        <code>
+            &lt;img src="Black_Circle.png" alt="image" width="104" height="142"&gt;
+        </code>
+    </div>
+    <img src="Black_Circle.png" alt="image" width="104" height="142">
+</div>
+        <div>
+    <h2>Elements:</h2>
+            <div><code>&lt;starttag&gt;<b>content</b>&lt;endtag&gt;</code></div>
+            <p>Element can contain elements - they can be <em>nested</em></p>
+            <ul><li><pre><p>HTML elements with no content are <em>empty emelents</em>.
+            <code>&lt;br&gt;</code>: emty element without closing tag;
+            Can be closed in the opening tag: <code>&lt;br /&gt;</code></p></pre></li></ul>
+            <ul><li>HTML tags are not case sensitive.</li>
+                <li>It's better to use closed tags and use lowercase.</li></ul>
+        </div>
+        <div>
+    <h3>Attributes:</h3>
+            <ul>
+                <li>Additional information about an element;</li>
+                <li>Allways specified in the start tag;</li>
+                <li>Come in name/value pairs, like: <code>name="value".</code></li>
+            </ul>
+            <h4>The Language attribute:</h4>
+            <ul>
+                <li>The document language can be declared in the <code>&lt;html&gt;</code> tag;</li>
+                <li>is declared in the <em>lang</em> attribute;</li>
+                <li>Important for accessibility applications and search engines.</li>
+            </ul>
+                <pre><p>ex:
+                <code>&lt;!DOCTYPE html&gt;
+                &lt;html <i>lang</i>="en-US"&gt;</code> - <b>en</b> is language; <b>US</b> - dialect.
+                <code>&lt;/html&gt;</code></p></pre>
+            <h4>The Title attribute:</h4>
+            <ul><li><code>&lt;p&gt;</code> element has a title attribute. The value of the attribute is "About this doc":</li></ul>
+            <pre><p>ex:
+            <code>&lt;p title="about this doc"&gt;
+            This is something about this document.
+            &lt;/p&gt;</code></p></pre>
+            <p title="about this doc">
+            This is something about this document. - move cursor over text
+            </p>
+            </div>
+        <div>
+    <h3>HTML Elemets:</h3>
+        <ul>
+            <li>HTML horizontal rules: <br> </li>
+            <ul><li><code>&lt;hr&gt;</code> - creates a horizontal line, used to separate content</li></ul>
+            <pre><p>ex:
+                <code>&lt;p&gt;...&lt;/p&gt;</code>
+                <code>&lt;hr&gt;</code>
+                <code>&lt;p&gt;...&lt;/p&gt;</code></p></pre>
+            <p>under this is a horizontal line</p>
+                    <hr>
+            <p>above this is a horizontal line</p>
+                    
+            <li>HTML <code>&lt;head&gt; element</code></li>
+            <ul>
+                <li>Nothing to do with HTML headings;</li>
+                <li>contains meta data - is not displayed;</li>
+                <li>placed between <code>&lt;head&gt; and <code>&lt;body&gt; tags.</code></code></li>
+            </ul>
+            <li>HTML <code>&lt;title&gt;</code> element:</li>
+            <ul><li>is meta data - defines the HTML doc.'s title;</li>
+            <li>title not dispalyed in doc., might be displayed in the browser tab.</li></ul>
+
+            <li>HTML <code>&lt;meta&gt;</code> element:</li>
+            <ul><li>is meta data;</li>
+                <li>can be used to define the character set & other info abour th doc.</li>
+            </ul>
+            <li>HTML <code>&lt;style&gt;</code> element<br>
+            Used to define internal CSS style sheets</li>
+            <li>HTML <code>&lt;link&gt;</code> element<br>
+            Used to define external CSS style sheets</li>
+            
+            <li>HTML &lt;br&gt; and &lt;pre&gt; elements:</li>
+            <ul><li>&lt;br&gt; - line break</li>
+                <p>ex:<br>
+                 <code>&lt;p&gt;This is&lt;br&gt;a para&lt;br&gt;graph with line breaks&lt;/p&gt;</code><br>
+                   = <br> <b>This is<br>a para<br>graph with line breaks</b>
+                </p>
+            <li>&lt;pre&gt;</li>
+                <ul><li>deines preformated text</li><li>the text instde &lt;pre&gt; element is displayed in a fixed-width font (usualy courier), and preserves both spaces and lines.</li></ul>
+           </ul>
+            </ul>
+            </div>
+        <div>
+            <h3>HTML Styles:</h3>
+            <p>HTML style attributes:</p>
+            <ul><li>Setting style:</li><br>
+                style="<b>property:value</b>;" - property and value are CSS values.</ul>
+            <ul><li>HTML background color:</li><br>
+                style="background-color:value;"<br>
+            ex:<br>
+            <code>&lt;body style="background-color:lightgrey;"&gt;<br>
+                text<br>
+                &lt;/body&gt;</code></ul>
+            <ul><li>HTML text color:</li><br>
+                style="color:value;"<br>
+            ex:<br>
+            <code>&lt;p style="color:red;"&gt;<br>
+                content<br>
+                &lt;/p&gt;</code><br>
+                =
+            <p style="color:red;">This text is red!</p></ul>
+            <ul><li>HTML fonts:</li><br>
+                style="font-family:value;"<br>
+            ex:<br>
+            <code>&lt;p style="font-family:verdana;"&gt;<br>
+                text<br>
+                &lt;/p&gt;</code><br>
+            =
+            <p style="font-family:verdana;">This text is in verdana font!</p></ul>
+            <ul><li>HTML text size:</li><br>
+                style="font-size:value;"<br>
+            ex:<br>
+            <code>&lt;p style="font-size:300%;"&gt;<br>
+                text<br>
+                &lt;/p&gt;</code><br>
+            =
+            <p style="font-size:300%;">This text is 300% in size!</p></ul>
+            <ul><li>HTML text alingment:</li><br>
+                style="text-align:value;"<br>
+            ex:<br>
+            <code>&lt;p style="text align:center;"&gt;<br>
+                text<br>
+                &lt;/p&gt;</code><br>
+            =
+            <p style="text-align:center;">This text is centered!</p></ul>
+            </div>
+        <div>
+            <h3>HTML text formatting elements:</h3>
+            <p>Types of text:</p>
+            
+<table style="width:50%">
+  <tr>
+      <td><b>Bold</b>: <code>&lt;b&gt;text&lt;/b&gt;</code></td>
+      <td><strong>Important</strong>: <code>&lt;strong&gt;text&lt;/strong&gt;</code></td>		
+      <td><i>Italic</i>: <code>&lt;i&gt;text&lt;/i&gt;</code></td>
+  </tr>
+  <tr>
+      <td><em>Emphasized</em>: <code>&lt;em&gt;text&lt;/em&gt;</code></td> 
+    <td><mark>Marked</mark>: <code>&lt;mark&gt;text&lt;/mark&gt;</code></td>		
+      <td><small>Small</small>: <code>&lt;small&gt;text&lt;/small&gt;</code></td>
+  </tr>
+  <tr>
+      <td><del>Deleted</del>: <code>&lt;del&gt;text&lt;/del&gt;</code></td>
+      <td><ins>Inserted</ins>: <code>&lt;ins&gt;text&lt;/ins&gt;</code></td>		
+      <td><sub>Subscripted</sub>: <code>&lt;sub&gt;text&lt;/sub&gt;</code></td>
+  </tr>
+    <tr>
+      <td><sup>Superscripted</sup>: <code>&lt;sup&gt;text&lt;/sup&gt;</code></td>
+    </tr>
+</table>
+            <ul>
+                <il>Browsers display <code>&lt;strong&gt;</code> as <code>&lt;b&gt;</code>, and <code>&lt;em&gt;</code> as <code>&lt;i&gt;</code>.</il><br>
+                <il>But: <code>&lt;b&gt;</code> & <code>&lt;i&gt;</code> - bold & italic, whereas <code>&lt;strong&gt;</code> & <code>&lt;m&gt;</code> - text is important.</il>
+            </ul>
+        
+        </div>
+    <div>
+        <h3>HTML Quotation & Citation elements:</h3>
+        <h4>Short quotations <code>&lt;q&gt;</code>:</h4>
+        <p>The HTML &lt;q&gt; element defines a short quotation.<br>
+Browsers usually insert quotation marks around the &lt;q&gt; element.</p>
+        <pre>ex:
+         <code>&lt;p&gt;WWF's goal is to: &lt;q&gt;Build a future where people live in harmony with nature.&lt;/q&gt;&lt;/p&gt;</code><br>
+         = WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></pre>
+        <h4>Long quotations <code>&lt;blockquote&gt;</code>:</h4>
+        <p>The HTML <code>&lt;blockquote&gt;</code> element defines a quoted section.<br>
+Browsers usually indent &lt;blockquote&gt; elements.</p>
+        <p>ex:</p>
+         <pre><code>&lt;p&gt;Here is a quote from WWF's website:&lt;/p&gt;
+&lt;blockquote cite="http://www.worldwildlife.org/who/index.html"&gt;
+For 50 years, WWF has been protecting the future of nature.
+The world's leading conservation organization,
+WWF works in 100 countries and is supported by
+1.2 million members in the United States and
+close to 5 million globally.
+&lt;/blockquote&gt;</code></pre>
+         = <blockquote cite="http://www.worldwildlife.org/who/index.html">
+For 50 years, WWF has been protecting the future of nature.<br>
+The world's leading conservation organization,<br>
+WWF works in 100 countries and is supported by<br>
+1.2 million members in the United States and<br>
+close to 5 million globally.
+</blockquote>
+       <h4>Abbreviations <code>&lt;abbr&gt;</code>:</h4>
+        <p>The HTML &lt;abbr&gt; element defines an abbreviation or an acronym.<br>
+Marking abbreviations can give useful information to browsers, translation systems and search-engines.</p>
+        <pre>ex:
+         <code>&lt;p&gt;The &lt;abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt; was founded in 1948.&lt;/p&gt;</code><br>
+         = The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</pre> 
+        <h4>Contact information <code>&lt;addres&gt;</code>:</h4>
+        <p>The HTML &lt;address&gt; element defines contact information (author/owner) of a document or article.<br>
+The &lt;address&gt; element is usually displayed in italic. Most browsers will add a line break before and after the element.</p>
+        <pre>ex:<br>
+         <pre><code>&lt;address&gt;
+Written by John Doe.&lt;br&gt;
+Visit us at:&lt;br&gt;
+Example.com&lt;br&gt;
+Box 564, Disneyland&lt;br&gt;
+USA
+&lt;/address&gt;</code></pre>
+         =  <address>
+Written by John Doe.
+Visit us at:
+Example.com
+Box 564, Disneyland
+USA
+        </address></pre>
+        <h4>Work Title <code>&lt;cite&gt;</code>:</h4>
+        <p>The HTML &lt;cite&gt; element defines the title of a work.<br>
+Browsers usually display  &lt;cite&gt; elements in italic.</p>
+        <pre>ex:
+         <code>&lt;p&gt;&lt;cite&gt;The Scream&lt;/cite&gt; by Edvard Munch. Painted in 1893.&lt;/p&gt;</code>
+         =  <cite>The Scream</cite> by Edvard Munch. Painted in 1893.</pre>
+        <h4>Bi-Directional Override <code>&lt;bdo&gt;</code>:</h4>
+        <p>The HTML &lt;bdo&gt;element defines bi-directional override.<br>
+The &lt;bdo&gt; element is used to override the current text direction:</p>
+        <pre>ex:
+         <code> &lt;bdo dir="rtl"&gt;This text will be written from right to left&lt;/bdo&gt;</code>
+         =   <bdo dir="rtl">This text will be written from right to left</bdo></pre>
+        </div>    
+    <div>
+        <h3>HTML Computer Code Elements</h3>
+        <h4>HTML Computer Code Formatting</h4>
+        <p>HTML normally uses variable letter size and spacing.<br>
+      This is not wanted when displaying examples of computer code.<br>
+      The &lt;kbd&gt;, &lt;samp&gt;, and &lt;code&gt; elements all support fixed letter size and spacing.</p>
+        <ul>
+            <li>Keyboard Input &lt;kbd&gt;:<br>
+            The HTML &lt;kbd&gt; element defines keyboard input:<br>
+            ex:
+            <code>&lt;kbd&gt;File | Open...&lt;/kbd&gt;</code><br>
+            =  <kbd>File | Open...</kbd> </li>
+        <li>Computer Output &lt;samo&gt;:<br>
+            The HTML &lt;samp&gt; element defines sample output from a computer program:<br>
+             <code>&lt;samp&gt;
+demo.example.com login: Apr 12 09:10:17
+Linux 2.6.10-grsec+gg3+e+fhs6b+nfs+gr0501+++p3+c4a+gr2b-reslog-v6.189
+                 &lt;/samp&gt;</code><br>
+            =
+             <samp>
+demo.example.com login: Apr 12 09:10:17
+Linux 2.6.10-grsec+gg3+e+fhs6b+nfs+gr0501+++p3+c4a+gr2b-reslog-v6.189
+</samp></li>
+        <li>Computer Code &lt;code&gt;:<br>
+            The HTML &lt;code&gt; element defines a piece of programming code:<br>
+            ex:
+            <code> &lt;code&gt;
+var x = 5;<br>
+var y = 6;<br>
+document.getElementById("demo").innerHTML = x + y;
+&lt;/code&gt;</code><br>
+            = <code>
+var x = 5;
+var y = 6;
+document.getElementById("demo").innerHTML = x + y;
+</code><br>
+            Notice that the &lt;code&gt; element does not preserve extra whitespace and line-breaks.<br>
+            To fix this, you can put the &lt;code&gt; element inside a &lt;pre&gt; element:<br>
+            <code> &lt;pre&gt;<br>
+&lt;code&gt;<br>
+var x = 5;<br>
+var y = 6;<br>
+document.getElementById("demo").innerHTML = x + y;<br>
+&lt;/code&gt;<br>
+&lt;/pre&gt;</code>
+           <br> =
+            <pre><code>
+var x = 5;
+var y = 6;
+document.getElementById("demo").innerHTML = x + y;
+</code></pre></li>
+             <li>Variables &lt;var&gt;:<br>
+            The HTML &lt;var&gt; element defines a variable.<br>
+            The variable could be a variable in a mathematical expression or a variable in programming context:<br>
+            ex:
+            <code>Einstein wrote: &lt;var&gt;E&lt;/var&gt; = &lt;var&gt;m&lt;/var&gt;&lt;var&gt;c&lt;/var&gt;&lt;sup&gt;2&lt;/sup&gt;.&lt;/code&gt;<br>
+                =  Einstein wrote: <var>E</var> = <var>m</var><var>c</var><sup>2</sup>.</code> </li>
+        </ul>
+        </div>
+        
+        <div>
+            
+        <h3>HTML Comments</h3>
+            
+            <p>Comment tags <code style="color:green;">&lt;!-- and --&gt;</code> are used to insert comments in HTML.</p>
+            <h4>HTML Comment Tags</h4>
+            <p>Comments are not displayed by the browser, but they can help document your HTML.<br>With comments you can place notifications and reminders in your HTML:</p>
+            <p>ex:<br><code>&lt;!-- This is a comment --&gt;<br>
+&lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+            &lt;!-- Remember to add more information here --&gt;</code></p>
+            <p>Comments are also great for debugging HTML, because you can comment out HTML lines of code, one at a time, to search for errors:<br>
+            <code>&lt;!-- Do not display this at the moment
+&lt;img border="0" src="pic_mountain.jpg" alt="Mountain"&gt;
+                --&gt;</code></p>
+            <h4>Conditional Comments:</h4>
+            <p>You might stumble upon conditional comments in HTML:<br>
+            <code>&lt;!--[if IE 8]&gt;
+    .... some HTML here ....
+                &lt;![endif]--&gt;</code><br>
+            Conditional comments defines HTML tags to be executed by Internet Explorer only.</p>
+            <h4>Software Program Tags:</h4>
+            <p>HTML comments tags can also be generated by various HTML software programs.<br>
+                For example: <code>&lt;!--webbot bot--&gt;</code> tags wrapped inside HTML comments by FrontPage and Expression Web.<br>
+As a rule, let these tags stay, to help support the software that created them.</p>
+        </div>
+        <div>
+        <h3>HTML Colors</h3>
+            <h4>Color Names</h4>
+            <p>With CSS, colors can be set by using color names:</p>
+            <h5 style="background-color:red">
+Background-color set by using red
+</h5>
+
+<h5 style="background-color:orange">
+Background-color set by using orange
+</h5>
+
+<h5 style="background-color:yellow">
+Background-color set by using yellow
+</h5>
+
+<h5 style="background-color:blue;color:white">
+Background-color set by using blue
+</h5>
+
+<h5 style="background-color:cyan">
+Background-color set by using cyan
+</h5>
+            <h4>RGB (Red, Green, Blue):</h4>
+            <p>With HTML, RGB color values can be specified using this formula: rgb(red, green, blue)<br>
+Each parameter (red, green, and blue) defines the intensity of the color between 0 and 255.<br>
+For example, rgb(255,0,0) is displayed as red, because red is set to its highest value (255) and the others are set to 0. </p>
+            
+<h5 style="background-color:rgb(255,0,0)">
+Background-color set by using rgb(255,0,0)
+</h5>
+
+<h5 style="background-color:rgb(0,255,0)">
+Background-color set by using rgb(0,255,0)
+</h5>
+
+<h5 style="background-color:rgb(0,0,255)">
+Background-color set by using rgb(0,0,255)
+</h5>
+
+<h5 style="background-color:rgb(255,255,0)">
+Background-color set by using rgb(255,255,0)
+</h5>
+
+<h5 style="background-color:rgb(255,0,255)">
+Background-color set by using rgb(255,0,255)
+</h5>
+
+<h5 style="background-color:rgb(0,255,255)">
+Background-color set by using rgb(0,255,255)
+</h5>
+            <p>Shades of gray are often defined using equal values for all the 3 light sources:</p>
+            
+<h5 style="background-color:rgb(0,0,0);color:white">
+Background-color set by using rgb(0,0,0)
+</h5>
+
+<h5 style="background-color:rgb(128,128,128);color:white">
+Background-color set by using rgb(128,128,128)
+</h5>
+
+<h5 style="background-color:rgb(255,255,255);">
+Background-color set by using rgb(255,255,255)
+</h5>
+            <h4>Hexadecimal Colors:</h4>
+            <p>With HTML, RGB values can also be specified using hexadecimal color values in the form: #RRGGBB, where RR (red), GG (green) and BB (blue) are hexadecimal values between 00 and FF (same as decimal 0-255).<br>
+For example, #FF0000 is displayed as red, because red is set to its highest value (FF) and the others are set to the lowest value (00).</p>
+            <h5 style="background-color:#FF0000">
+Background-color set by using #FF0000
+</h5>
+
+<h5 style="background-color:#00FF00">
+Background-color set by using #00FF00
+</h5>
+
+<h5 style="background-color:#0000FF">
+Background-color set by using #0000FF
+</h5>
+
+<h5 style="background-color:#FFFF00">
+Background-color set by using #FFFF00
+</h5>
+
+<h5 style="background-color:#FF00FF">
+Background-color set by using #FF00FF
+</h5>
+
+<h5 style="background-color:#00FFFF">
+Background-color set by using #00FFFF
+</h5>
+            <p>Shades of gray are often defined using equal values for all the 3 light sources:</p>
+            
+<h5 style="background-color:#000000;color:white">
+Background-color set by using #000000
+</h5>
+
+<h5 style="background-color:#808080;color:white">
+Background-color set by using #808080
+</h5>
+
+<h5 style="background-color:#FFFFFF;">
+Background-color set by using #FFFFFF
+</h5>
+        </div>
+        <h2>CSS</h2>
+        <h3>HTML Styles - CSS</h3>
+        <h4>Styling HTML with CSS</h4>
+        <p>CSS stands for <b>C</b>ascading <b>S</b>tyle <b>S</b>heets<br>
+            Styling can be added to HTML elements in 3 ways:</p>
+<ul>
+    <il>Inline - using a <b>style attribute</b> in HTML elements</il><br>
+    <il>Internal - using a <b><code>&lt;style&gt;</code> element</b> in the HTML <code>&lt;head&gt;</code> section</il><br>
+    <il>External - using one or more <b>external CSS files</b></il>
+        </ul>
+<p>The most common way to add styling, is to keep the styles in separate CSS files. But, in this tutorial, we use internal styling, because it is easier to demonstrate, and easier for you to try it yourself. </p>
+    <h4>Inline Styling (Inline CSS)</h4>
+        <p>Inline styling is used to apply a unique style to a single HTML element:<br>
+Inline styling uses the style attribute.<br>
+        This example changes the text color of the <code>&lt;h1&gt;</code> element to blue:</p>
+        <code> &lt;p style="color:blue;"&gt;This is a Blue Heading&lt;/p&gt; </code>
+         <p style="color:blue;">This is a Blue paragraph</p> 
+        <h4>Internal Styling (Internal CSS)</h4>
+        <p>Internal styling is used to define a style for one HTML page.<br>
+            <a href="internal_CSS_styling.html"><b>Internal styling</b></a>  is defined in the <code>&lt;head&gt;</code> section of an HTML page, within a <code>&lt;style&gt;</code> element:</p>
+        <pre><code style="background-color:lightblue;">>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+body {background-color:lightgrey;}
+h1   {color:blue;}
+p    {color:green;}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;This is a blue heading&lt;/h1&gt;
+&lt;p&gt;This is a green paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        <h4>External Styling (External CSS)</h4>
+        <p>An external style sheet is used to define the style for many pages.<br>
+            With an <a href="external_css_styling.html"><b>external style sheet</b></a>, you can change the look of an entire web site by changing one file!<br>
+            To use an external style sheet, add a link to it in the <code>&lt;head&gt;</code> section of the HTML page:</p>
+        <pre><code style="background-color:lightblue;">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;dy&gt;
+&lt;/html&gt;</code></pre>
+<p>An external style sheet can be written in any text editor. The file should not contain any html tags. The style sheet file must be saved with a .css extension.<br>
+Here is how the "styles.css" looks:</p>
+        <pre><code style="background-color:lightgrey;">body {
+    background-color: lightgrey;
+}
+
+h1 {
+    color: blue;
+}
+
+p {
+    color:green;
+}</code></pre>
+        <h3>CSS Fonts</h3>
+        <p>The CSS <b>color</b> property defines the text color to be used for the HTML element.<br>
+            The CSS <b>font-family</b> property defines the font to be used for the HTML element.<br>
+            The CSS <b>font-size</b> property defines the text size to be used for the HTML element.</p>
+        <a href="CSS_fonts.html"><b>Example:</b></a>
+        <pre><code style="background-color:lightblue;">>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+<code style="background-color:lightgrey;">h1 {
+    color: blue;
+    font-family: verdana;
+    font-size: 300%;
+}
+p  {
+    color: red;
+    font-family: courier;
+    font-size: 160%;
+}</code>
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        
+        <h3>The CSS Box Model</h3>
+        <p>Every HTML element has a box around it, even if you cannot see it.<br>
+            The CSS <a href="CSS-box.html"><b>border</b></a> property defines a visible border around an HTML element:</p>
+         <p>ex:</p>
+        <pre><code style="background-color:lightgrey;">p {
+    border: 1px solid black;
+}</code></pre>
+        <p>The CSS padding property defines a <a href="CSS-box-padding.html"><b>padding</b></a> (space) inside the border:</p>
+        <pre><code style="background-color:lightgrey;">p {
+    border: 1px solid black;
+    padding: 10px;
+}</code></pre>
+        <p>The CSS <a href="CSS-box-margins.html"><b>margin</b></a> property defines a margin (space) outside the border:</p>
+        <pre><code style="background-color:lightgrey;">p {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 30px;
+}</code></pre>
+        <h3>The id attribute:</h3>
+        <p>All the examples above use CSS to style HTML elements in a general way.<br>
+To define a special style for one special element, first add an id attribute to the element:</p>
+        <code style="background-color:lightgrey;">&lt;p id="p01"&gt;I am different&lt;/p&gt;</code>
+        <p>Then, define a style for the element ith the specific id:</p>
+        <pre><code style="background-color:lightgrey;">
+        #p01 {
+        color:blue;
+        }
+        </code></pre>
+   <p>ex:</p>     
+<p id="p01">I am different</p>
+        <h3>The class Attribute:</h3>
+        <p>To define a style for a special type (class) of elements, add a class attribute to the element:</p>
+        <code>
+&lt;p class="error"&gt;I am different&lt;/p&gt;
+</code>
+        <p>Now you can define a different style for elements with the specific class:</p>
+        <pre><code style="background-color:lightgrey;">p.error {
+    color: red;
+}</code></pre>
+        <p id="p02"><b> Use id to address a single element. Use class to address groups of elements!</b></p>
+<h2>HTML Links</h2>
+        <p>Links are found in nearly all web pages. Links allow users to click their way from page to page.</p>
+        <h3>HTML Links - Hyperlinks</h3>
+        <p>HTML links are hyperlinks.<br>
+            A hyperlink is a text or an image you can click on, and jump to another document.</p>
+        <h3>HTML Links - Syntax</h3>
+        <p>In HTML, links are defined with the <code>&lt;a&gt;</code> tag:</p>
+        <code>&lt;a href="url"&lt;link text&lt;/a&gt;</code>
+        <p>ex:
+        <code>&lt;a href="http://www.w3schools.com/html/"&gt;Visit our HTML tutorial&lt;/a&gt;</code></p>
+        <h3>Local Links</h3>
+        <p>The example above used an absolute URL (A full web address).<br>A local link (link to the same web site) is specified with a relative URL (without http://www....).<br>ex:<code>&lt;a href="html_images.asp"&gt;HTML Images&lt;/a&gt;</code></p>
+        <h3>HTML Links - Colors</h3>
+        <section>When you move the mouse over a link, two things will normally happen:<ul><il>The mouse arrow will turn into a little hand</il><br><il>The color of the link element will change</il></ul>By default, a link will appear like this (in all browsers):<ul><il>An unvisited link is underlined and blue</il><br><il>A visited link is underlined and purple</il><br><il>An active link is underlined and red</il></ul>You can change the default colors, by using styles:<br>
+            ex: <pre><code style="background-color:lightblue">&lt;style&gt;
+a:link    {color:green; background-color:transparent; text-decoration:none}
+a:visited {color:pink; background-color:transparent; text-decoration:none}
+a:hover   {color:red; background-color:transparent; text-decoration:underline}
+a:active  {color:yellow; background-color:transparent; text-decoration:underline}
+&lt;/style&gt;</code></pre></section>
+        <section><h3>HTML Links - The target Attribute</h3>
+        The target attribute specifies where to open the linked document,<br>This example will open the linked document in a new browser window or in a new tab:<br>ex: <code>&lt;a href="http://www.w3schools.com/" target="_blank"&gt;Visit W3Schools!&lt;/a&gt;</code><br>
+            <ul><li>_blank 	Opens the linked document in a new window or tab</li><br><li>_self 	Opens the linked document in the same frame as it was clicked (this is default)</li><br><li>_parent 	Opens the linked document in the parent frame</li><br><li>_top 	Opens the linked document in the full body of the window</li><br><li>framename 	Opens the linked document in a named frame</li></ul><br>If your webpage is locked in a frame, you can use target="_top" to break out of the frame:<br><code style="background:lightblue">&lt;a href="http://www.w3schools.com/html/" target="_top"&gt;HTML5 tutorial!&lt;/a&gt;</code></section>
+        <section><h3>HTML Links - Image as Link</h3>
+        It is common to use images as links:<br><pre><code style="background:lightblue">&lt;a href="default.asp"&gt;
+  &lt;img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0"&gt;
+&lt;/a&gt;</code></pre></section>
+        <section><h3>HTML Links - Create a Bookmark</h3>
+        HTML bookmarks are used to allow readers to jump to specific parts of a Web page.<br>Bookmarks are practical if your website has long pages.<br>To make a bookmark, you must first create the bookmark, and then add a link to it.<br>When the link is clicked, the page will scroll to the location with the bookmark.<br>ex:<br>First, create a bookmark with the id attribute:<br><code id="code-plav">&lt;h2 id="tips"&gt;Useful Tips Section&lt;/h2&gt;</code><br>Then, add a link to the bookmark ("Useful Tips Section"), from within the same page:<br><code id="code-plav">&lt;a href="#tips"&gt;Visit the Useful Tips Section&lt;/a&gt;</code><br>Or, add a link to the bookmark ("Useful Tips Section"), from another page:<br>ex:<br><code id="code-plav">&lt;a href="html_tips.html#tips"&gt;Visit the Useful Tips Section&lt;/a&gt;</code></section>
+        <section><h2>HTML Images</h2>
+        <img src="pic_mountain.jpg" alt="Mountain View" style="width:304px;height:228px;"><br><code id="code-plav">&lt;img src="pic_mountain.jpg" alt="Mountain View" style="width:304px;height:228px;"&gt;</code><br>Always specify the width and height of an image. If width and height are not specified, the page will flicker while the image loads.<h3>Html Images Syntax</h3>In HTML, images are defined with the <code>&lt;img&gt;</code> tag.<br>The <code>&lt;img&gt;</code> tag is empty, it contains attributes only, and does not have a closing tag.<br>The src attribute specifies the URL (web address) of the image:<br><code id="code-plav">&lt;img src="url" alt="some_text"&gt;</code><h3>The alt Attribute</h3>The alt attribute specifies an alternate text for an image, if the image cannot be displayed.<br>The alt attribute provides alternative information for an image if a user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).<br>If a browser cannot find an image, it will display the alt text:<br><code id="code-plav">&lt;img src="wrongname.gif" alt="HTML5 Icon" style="width:128px;height:128px;"&gt;</code><br> <img src="wrongname.gif" alt="HTML5 Icon" style="width:128px;height:128px;"><br>The alt attribute is required. A web page will not validate correctly without it.<h3>HTML Screen Readers</h3>A screen reader is a software program that can read what is displayed on a screen.<br>Screen readers are useful to people who are blind, visually impaired, or learning disabled.<h3>Image Size - Width and Height</h3>You can use the style attribute to specify the width and height of an image.<br>The values are specified in pixels (use px after the value):<br><code id="code-plav">&lt;img src="html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;"&gt;</code><br>Alternatively, you can use width and height attributes. Here, the values are specified in pixels by default:<br><code id="code-plav">&lt;img src="html5.gif" alt="HTML5 Icon" width="128" height="128"&gt;</code><h3>Width and Height or Style?</h3>Both the width, height, and style attributes are valid in the latest HTML5 standard.<br>We suggest you use the style attribute. It prevents styles sheets from changing the original size of images:<br>ex: <pre><code id="code-plav">&lt;style&gt;
+img {
+    width:100%;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;img src="html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;"&gt;
+&lt;img src="html5.gif" alt="HTML5 Icon" width="128" height="128"&gt;
+
+&lt;/body&gt;</code></pre><h3>Images in Another Folder</h3>If not specified, the browser expects to find the image in the same folder as the web page.<br>However, it is common to store images in a sub-folder. You must then include the folder name in the src attribute:<br>ex:<br><code id="code-plav"> &lt;img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;"&gt;</code><h3>Images on Another Server</h3>Some web sites store their images on image servers.<br>Actually, you can access images from any web address in the world:<br>ex:<br><code id="code-plav">&lt;img src="http://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com"&gt;</code><h3>Animated Images</h3>The GIF standard allows animated images:<br>ex:<br><code id="code-plav">&lt;img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;"&gt;</code><br>Note that the syntax of inserting animated images is no different from non-animated images.<h3>Using an Image as a Link</h3>To use an image as a link, simply nest the &lt;img&gt; tag inside the &lt;a&gt; tag:<br>ex:<br><pre id="code-plav">&lt;a href="default.asp"&gt;
+  &lt;img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;"&lt;
+&gt;/a&lt;</pre><h3>Image floating</h3>Use the CSS float property to let the image float.<br>The image can float to the right or to the left of a text:<br>ex:<br><pre id="code-plav">&lt;p&gt;
+&lt;img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;"&gt;
+The image will float to the right of the text.
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;"&gt;
+The image will float to the left of the text.
+&lt;/p&gt;</pre> <p>
+<img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+The image will float to the right of the text.
+</p>
+
+<p>
+<img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+The image will float to the left of the text.
+</p><h3>Image Maps</h3>Use the &lt;map&gt; tag to define an image-map. An image-map is an image with clickable areas.<br>The name attribute of the &lt;map&gt; tag is associated with the &lt;img&gt;'s usemap attribute and creates a relationship between the image and the map.<br>The &lt;map&gt; tag contains a number of &lt;area&gt; tags, that defines the clickable areas in the image-map:<br>ex:<br><pre id="code-plav"> &lt;img src="planets.gif" alt="Planets" usemap="#planetmap" style="width:145px;height:126px;"&gt;
+
+<strong>&lt;map name="planetmap"&gt;
+  &lt;area <i id="red-text">shape="rect" coords="0,0,82,126"</i> alt="Sun" href="sun.htm"&gt;
+  &lt;area <i id="red-text">shape="circle" coords="90,58,3"</i> alt="Mercury" href="mercur.htm"&gt;
+  &lt;area <i id="red-text">shape="circle" coords="124,58,8"</i> alt="Venus" href="venus.htm"&gt;
+&lt;/map&gt;</strong></pre><section><p>Click on the sun or on one of the planets to watch it closer:</p>
+
+<img src="planets.gif" alt="Planets" usemap="#planetmap" style="width:145px;height:126px;">
+
+<map name="planetmap">
+  <area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.gif">
+  <area shape="circle" coords="90,58,3" alt="Mercury" href="merglobe.gif">
+  <area shape="circle" coords="124,58,8" alt="Venus" href="venglobe.gif">
+</map></section><section>
+            <h4>Chapter summary:</h4><ul><li>Use the HTML &lt;img&gt; element to define an image</li><br><li>Use the HTML src attribute to define the URL of the image</li><br><li>Use the HTML alt attribute to define an alternate text for an image, if it cannot be displayed</li><br><li>Use the HTML width and height attributes to define the size of the image</li><br><li>Use the CSS width and height properties to define the size of the image (alternatively)</li><br><li>Use the CSS float property to let the image float</li><br><li>Use the HTML &lt;map&gt; element to define an image-map</li><br><li>Use the HTML &lt;area&gt; element to define the clickable areas in the image-map</li><br><li>Use the HTML &lt;img&gt;'s element usemap attribute to point to an image-map</li></ul></section>
+            &nbsp;
+        </section>
+    <!-- OD OVDE SECTION E VO ARTICLE -->
+    <article><h2>HTML Tables</h2>
+        <section>
+        Defining HTML tables:<br><pre id="code-plav"> &lt;table style="width:100%"&gt; - defines a table
+  &lt;tr&gt; - table row
+    &lt;td&gt;Jill&lt;/td&gt; - table data
+    &lt;td&gt;Smith&lt;/td&gt;
+    &lt;td&gt;50&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Eve&lt;/td&gt;
+    &lt;td&gt;Jackson&lt;/td&gt;
+    &lt;td&gt;94&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt; </pre>
+            <ul><il>Tables are defined with the &lt;table&gt; tag.</il><br><il>Tables are divided into table rows with the &lt;tr&gt; tag.</il><br><il>Table rows are divided into table data with the &lt;t&gt; tag.</il><br><il>A table row can also be divided into table headings with the <th> tag.</il></ul></section>
+        <section>
+            <h3>An HTML Table with a Border Attribute</h3>
+            If you do not specify a border for the table, it will be displayed without borders.<br>A border can be added using the border attribute:<br><div style="float:left"><pre id="code-plav">&lt;table border="1" style="width:100%"&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Jill&lt;/td&gt;
+    &lt;td&gt;Smith&lt;/td&gt;
+    &lt;td&gt;50&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Eve&lt;/td&gt;
+    &lt;td&gt;Jackson&lt;/td&gt;
+    &lt;td&gt;94&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</pre></div><div> <table border="1" style="width:100%;">
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+    </div><p>To add borders, use the CSS border property:<br>ex:<br><pre id="code-plav">table, th, td {
+    border: 1px solid black;
+}</pre><br>Remember to define borders for both the table and the table cells.
+        </section>
+        <section>
+        <h3>An HTML Table with Collapsed Borders</h3>If you want the borders to collapse into one border, add <b>CSS border-collapse:</b>ex:<br><pre id="code-plav">table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}</pre>
+        </section>
+        <section><h3>An HTML Table with Cell Padding</h3>Cell padding specifies the space between the cell content and its borders.<br>If you do not specify a padding, the table cells will be displayed without padding.<br>To set the padding, use the <b>CSS padding</b> property:<br>ex:<br><pre id="code-plav">table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+}</pre>
+        </section>
+        <section><h3>HTML Table Headings</h3>Table headings are defined with the &lt;th&gt; tag.<br>By default, all major browsers display table headings as bold and centered:<br>ex:<br><pre id="code-plav">&lt;table style="width:100%"&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Firstname&lt;/th&gt;
+    &lt;th&gt;Lastname&lt;/th&gt;
+    &lt;th&gt;Points&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Eve&lt;/td&gt;
+    &lt;td&gt;Jackson&lt;/td&gt;
+    &lt;td&gt;94&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</pre> 
+            <!-- PAMTI -->
+            <div><style scoped>
+   table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+}
+th {
+    text-align: center;
+}
+            </style><table style="width:50%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>		
+    <th>Points</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>		
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>		
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>		
+    <td>80</td>
+  </tr>
+</table></div><br>To left-align the table headings, use the CSS text-align property:<br><pre id="code-plav">th {
+    text-align: left;
+}</pre>
+        </section>
+        <section><h3>An HTML Table with Border Spacing</h3>Border spacing specifies the space between the cells.<br>To set the border spacing for a table, use the CSS border-spacing property:<br>ex:<br><pre id="code-plav">table {
+    border-spacing: 5px;
+}</pre><br><div>
+            <style scoped>
+table, th, td {
+    border: 1px solid black;
+    padding: 5px;
+}
+table {
+    border-spacing: 15px;
+}
+</style><table style="width:50%">
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>		
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>		
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>		
+    <td>80</td>
+  </tr>
+</table></div> 	If the table has collapsed borders, border-spacing has no effect.</section>
+        
+        
+        </article>
+        
+        
+    </div>
+
+
+</body> <!-- end body -->
+</html> <!-- end html -->
